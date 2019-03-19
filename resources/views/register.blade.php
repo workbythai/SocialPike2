@@ -185,7 +185,6 @@
 
                 <div class="caht-input-bottom ">
                   <form id="newsletterform">
-
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <label class="fileContainer">
@@ -198,9 +197,6 @@
                         <button type="button" class="input-group-text chat-submit" id="btn">ส่ง</button>
                       </div>
                     </div>
-                    
-
-
                   </form>
                 </div>
                 

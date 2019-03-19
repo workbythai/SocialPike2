@@ -87,7 +87,7 @@
 
                 <!-- Home -->
                 <li class="hs-has-mega-menu nav-item" data-animation-in="fadeIn" data-animation-out="fadeOut" data-max-width="60%" data-position="left">
-                  <a id="mega-menu-home" class="nav-link g-py-7 px-3" href="#" aria-haspopup="true" aria-expanded="false">หมวดหมู่ร้านค้า
+                  <a id="mega-menu-home" class="nav-link text-white g-py-7 px-3" href="#" aria-haspopup="true" aria-expanded="false">หมวดหมู่ร้านค้า
                     <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
                   </a>
                   <!-- Mega Menu -->
@@ -163,25 +163,25 @@
 
                 <!-- All store -->
                 <li class="nav-item">
-                  <a href="#" class="nav-link g-py-7 px-3">ร้านค้าทั้งหมด</a>
+                  <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าทั้งหมด</a>
                 </li>
                 <!-- End All store -->
 
                 <!-- Recommended stores -->
                 <li class="nav-item">
-                  <a href="#" class="nav-link g-py-7 px-3">ร้านค้าแนะนำ</a>
+                  <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าแนะนำ</a>
                 </li>
                 <!-- End Recommended -->
 
                 <!-- Recommended stores -->
                 <li class="nav-item">
-                  <a href="#" class="nav-link g-py-7 px-3">ค้นหาร้านค้า</a>
+                  <a href="#" class="nav-link g-py-7 text-white px-3">ค้นหาร้านค้า</a>
                 </li>
                 <!-- End Recommended -->
 
                 <!-- Recommended stores -->
                 <li class="nav-item">
-                  <a href="#" class="nav-link g-py-7 px-3">ชุมชน</a>
+                  <a href="#" class="nav-link g-py-7 text-white px-3">ชุมชน</a>
                 </li>
                 <!-- End Recommended -->
 
@@ -359,8 +359,8 @@
 
       $(document).ready(function(){
           $("#btn").click(function(){
-            $("#message").append("<div class='text-right'><p class='badge you-mes'>"+ $("#myInput").val() +"</p></div> <br>");
-            $("#message").append("<p class='badge friend-message'>ขอบคุณครับ</p> <br>");
+            $("#message").append("<div class='text-right'><p class='badge you-mes'>"+ $("#myInput").val() +"</p></div>" + "<div class='text-right list-chat-time'><span>12:00</span></div>");
+            $("#message").append("<p class='badge friend-message'>ขอบคุณครับ</p> <br>"  + "<div class='list-chat-time'><span>Jeans Shop</span></div>");
             $( '#newsletterform' ).append(function(){
                 this.reset();
             });
