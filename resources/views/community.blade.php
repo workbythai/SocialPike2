@@ -10,7 +10,7 @@
   <div class="wrapper">
     <div class="container border-0 rounded-0 bg-white py-md-5 py-3 px-md-5 px-3">
         <section class="mb-4">
-            <div class="card bg-drakgold rounded-0  px-sm-5">
+            <div class="card bg-drakgold rounded-0  px-sm-5" id="community">
                 <div class="card-body">
                     <div class="text-white mb-3">
                       <span class=""><i class="fa fa-quote-left" aria-hidden="true"></i> ข้อความ</span> |

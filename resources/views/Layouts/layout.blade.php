@@ -52,10 +52,9 @@
     <!-- Header -->
     <header id="js-header" class="u-header u-header--static">
       <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3">
-      
-        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal bg-nav-drakgold d-lg-block d-none">
+        <!-- เมนูเมื่อ Login แล้ว -->
+        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal bg-nav-drakgold d-none">
           <div class="container">
-          <!-- Logo -->
             <a href="index.html" class="navbar-brand d-flex">
               <img src="{{asset('images/logo/logo.jpg')}}" alt="" class="logo">
             </a>
@@ -63,11 +62,34 @@
               <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream" target="_blank">Purchase now</a>
             </div>
           </div>
-        <!-- End Logo -->
         </nav>
-        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal bg-nav-gold">
+        <!-- END เมนูที่ Login แล้ว -->
+
+        <!-- เมนูที่ยังไม่ได้ Login -->
+        <nav id="navcolor" class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal bg-nav-drakgold d-lg-block d-none">
           <div class="container">
-            <!-- Responsive Toggle Button -->
+            <a href="index.html" class="navbar-brand d-flex">
+              <img src="{{asset('images/logo/logo.jpg')}}" alt="" class="logo">
+            </a>
+
+            <form class="input-form">
+              <input class="form-control input-search" placeholder="ค้นหาร้านค้าและสินค้า" />
+              <button id="searchsubmit" class="btn bg-gold search-submit" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+
+            <div class="btn-group mx-3" role="group" aria-label="Basic example">
+              <button type="button" id="openstore" class="btn btn-secondary mx-2 btn-open-store">เปิดร้านค้าฟรี</button>
+              <button type="button" id="loginuser" class="btn btn-secondary mx-2 btn-login-navbar">สมัครใหม่ / เข้าสู่ระบบ</button>
+            </div>
+          </div>
+        </nav>
+        <!-- End เมนูที่ยังไม่ได้ Login -->
+
+        <!-- เมนูทั้งหมด -->
+        <nav id="navbottom" class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal bg-nav-gold">
+          <div class="container">
             <a href="index.html" class="navbar-brand d-lg-none d-flex ">
               <img src="{{asset('images/logo/logo.jpg')}}" alt="" class="logo">
             </a>
@@ -78,22 +100,16 @@
               </span>
               </span>
             </button>
-            <!-- End Responsive Toggle Button -->
 
-
-            <!-- Navigation -->
             <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
               <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 mx-auto">
-
-                <!-- Home -->
                 <li class="hs-has-mega-menu nav-item" data-animation-in="fadeIn" data-animation-out="fadeOut" data-max-width="60%" data-position="left">
                   <a id="mega-menu-home" class="nav-link text-white g-py-7 px-3" href="#" aria-haspopup="true" aria-expanded="false">หมวดหมู่ร้านค้า
                     <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
                   </a>
-                  <!-- Mega Menu -->
+                  <!-- mega menu -->
                   <div class="w-100 hs-mega-menu u-shadow-v11 font-weight-normal g-brd-top g-brd-primary g-brd-top-2 g-bg-white g-mt-18 g-mt-8--lg--scrolling" aria-labelledby="mega-menu-home">
                     <div class="row align-items-stretch no-gutters">
-                      <!-- Home (col) -->
                       <div class="col-lg-6">
                         <ul class="list-unstyled">
                           <li class="dropdown-item active">
@@ -122,9 +138,6 @@
                           </li>
                         </ul>
                       </div>
-                      <!-- End Home (col) -->
-
-                      <!-- Home (col) -->
                       <div class="col-lg-6 g-brd-left--lg g-brd-gray-light-v5">
                         <ul class="list-unstyled">
                           <li class="dropdown-item ">
@@ -153,47 +166,80 @@
                           </li>
                         </ul>
                       </div>
-                      <!-- End Home (col) -->
                     </div>
                   </div>
-                  <!-- End Mega Menu -->
+                  <!-- end mega menu -->
                 </li>
-                <!-- End Home -->
-
-
-                <!-- All store -->
                 <li class="nav-item">
                   <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าทั้งหมด</a>
                 </li>
-                <!-- End All store -->
 
-                <!-- Recommended stores -->
                 <li class="nav-item">
                   <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าแนะนำ</a>
                 </li>
-                <!-- End Recommended -->
-
-                <!-- Recommended stores -->
                 <li class="nav-item">
                   <a href="#" class="nav-link g-py-7 text-white px-3">ค้นหาร้านค้า</a>
                 </li>
-                <!-- End Recommended -->
-
-                <!-- Recommended stores -->
                 <li class="nav-item">
                   <a href="#" class="nav-link g-py-7 text-white px-3">ชุมชน</a>
                 </li>
-                <!-- End Recommended -->
-
               </ul>
-            </div>
-            <!-- End Navigation -->
+
+              <div class="mx-3">
+                <form class="input-form d-lg-none d-flex mb-3 w-100">
+                  <input class="form-control input-search" placeholder="ค้นหาร้านค้าและสินค้า" />
+                  <button class="btn bg-gold search-submit" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+
+              <div class="btn-group mx-3 d-lg-none d-block mb-3 text-center" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary mx-2 btn-open-store">เปิดร้านค้าฟรี</button>
+                <button type="button" class="btn btn-secondary mx-2 btn-login-navbar">สมัครใหม่ / เข้าสู่ระบบ</button>
+              </div>
+
+              </div>
 
             
           </div>
         </nav>
+        <!-- <div id="btn"> Click Me</div>
+        <div id="nav" style="" class="hide">
+            <ul>
+                <li>sample</li>
+                <li>sample</li>
+                <li>sample</li>
+            </ul>
+        </div> -->
       </div>
     </header>
+
+
+
+    <section class="position-fixed c-fixed">
+      <button type="button" class="btn btn-cog" id="openmain">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="btn btn-cog" id="closemain" style="display:none;">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </button>
+      <div id="mySidebar" class="sidebarcolor">
+        <a href="#" id="btn-drak" class="d-flex">
+          <div class="w-theme bg-black"></div>
+          <div class="w-theme bg-secondary"></div>
+          <div class="w-theme bg-black-gray"></div>
+          <div class="w-theme bg-light"></div>
+        </a>
+        <a href="#" id="btn-green" class="d-flex">
+          <div class="w-theme bg-dark-green"></div>
+          <div class="w-theme bg-green1"></div>
+          <div class="w-theme bg-green2"></div>
+          <div class="w-theme g-bg-white"></div>
+        </a>
+      </div>
+    </section>
+
     <!-- End Header -->
     @yield('body')
 
@@ -367,6 +413,93 @@
             // $("#demo").append("<span class='badge badge-secondary'>ขอบคุณครับ</span>");
           });
       });
+
+      $(document).ready(function(){
+        $("#openmain").click(function(){
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("openmain").style.display = "none";
+          document.getElementById("openmain").style.right = "250px";
+          document.getElementById("closemain").style.display = "block";
+          document.getElementById("closemain").style.right = "250px";
+        });
+      });
+
+
+      $(document).ready(function(){
+        $("#closemain").click(function(){
+          document.getElementById("mySidebar").style.width = "0px";
+          document.getElementById("openmain").style.display = "block";
+          document.getElementById("openmain").style.right = "0px";
+          document.getElementById("closemain").style.display = "none";
+          document.getElementById("closemain").style.right = "0px";
+          
+        });
+      });
+
+
+
+
+
+      // var menu = document.getElementById('navcolor');
+      // var menubottom = document.getElementById('navbottom');
+      // var submitform = document.getElementById('searchsubmit');
+
+
+      document.getElementById('btn-drak').onclick = function() {
+            $("#navcolor").css("background-color" , "rgb(0, 0, 0)");
+            $("#navbottom").css("background-color" , "rgb(108, 117, 125)");
+            $("#mySidebar").css("background-color" , "#cdcdcd");
+            $("#searchsubmit").css("background-color" , "rgb(0, 0, 0)");
+            $("#closemain").css("background-color" , "#cdcdcd");
+            $("#closemain").css("border-color" , "#cdcdcd");
+            $("#openstore").css("background-color" , "#fff");
+            $("#openstore").css("color" , "#000");
+            $("#openstore").css("border-color" , "#fff");
+            $("#openmain").css("background-color" , "#fff");
+            $(".prduct-tab").css("border-color" , "#c5c3c3");
+            $("#openmain").css("color" , "#000");
+            $("#openmain").css("border-color" , "#fff");
+            $("#loginuser").css("background-color" , "rgb(108, 117, 125)");
+            $("#loginuser").css("color" , "rgb(255, 255, 255)");
+            $("#loginuser").css("border-color" , "rgb(108, 117, 125)");
+            $(".list-all-caht").css("background-color" , "rgb(0, 0, 0)");
+            $(".prduct-tab.active").css("background-color" , "#6c757d");
+            $(".prduct-tab.active").css("border-color" , "#6c757d");
+            $(".prduct-tab").css("background-color" , "#c5c3c3");
+            $("#profile-se").css("background-color" , "#6c757d");
+            $(".title-page").css("color" , "rgb(0, 0, 0)");
+            $(".hr-title").css("border-color" , "rgb(0, 0, 0)");
+      }
+
+
+      document.getElementById('btn-green').onclick = function() {
+            $("#navcolor").css("background-color" , "rgb(0, 150, 136)");
+            $("#navbottom").css("background-color" , "rgb(76, 175, 80)");
+            $("#mySidebar").css("background-color" , "rgb(76, 175, 80)");
+            $("#closemain").css("background-color" , "rgb(76, 175, 80)");
+            $("#closemain").css("border-color" , "rgb(76, 175, 80)");
+            $("#openstore").css("background-color" , "#fff");
+            $("#openstore").css("color" , "#000");
+            $("#openstore").css("border-color" , "#fff");
+            $("#openmain").css("background-color" , "#fff");
+            $("#openmain").css("color" , "#000");
+            $("#openmain").css("border-color" , "#fff");
+            $("#loginuser").css("background-color" , "rgb(139, 195, 74)");
+            $("#loginuser").css("color" , "rgb(255, 255, 255)");
+            $("#loginuser").css("border-color" , "rgb(139, 195, 74)");
+            $(".list-all-caht").css("background-color" , "rgb(0, 150, 136)");
+            $(".prduct-tab.active").css("background-color" , "rgb(0, 150, 136)");
+            $(".prduct-tab.active").css("border-color" , "rgb(0, 150, 136)");
+            $(".prduct-tab").css("background-color" , "rgb(76, 175, 80)");
+            $(".prduct-tab").css("border-color" , "rgb(76, 175, 80)");
+            $("#profile-se").css("background-color" , "#6c757d");
+            $("#community").css("background-color" , "#009688");
+            $(".text-gold").css("color" , "#009688");
+            $(".border-gold ").css("border-color" , "#4CAF50");
+            $(".title-page").css("color" , "rgb(139, 195, 74)");
+            $(".hr-title").css("border-color" , "#8bc34a");
+            $("#searchsubmit").css("background-color" , "#8bc34a");
+      }
   </script>
 
 
