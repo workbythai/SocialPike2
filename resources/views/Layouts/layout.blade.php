@@ -123,7 +123,7 @@
               </form>
 
               <div class="btn-group mx-3" role="group" aria-label="Basic example">
-                <button type="button" id="openstore" class="btn btn-secondary mx-2 btn-open-store">เปิดร้านค้าฟรี</button>
+                <a href="{{url('/register')}}" type="button" id="openstore" class="btn btn-secondary mx-2 btn-open-store">เปิดร้านค้าฟรี</a>
                 <button type="button" id="loginuser" class="btn btn-secondary mx-2 btn-login-navbar" data-toggle="modal" data-target="#myModal">สมัครใหม่ / เข้าสู่ระบบ</button>
               </div>
             </div>
@@ -157,59 +157,107 @@
                     <div class="w-100 hs-mega-menu u-shadow-v11 font-weight-normal g-brd-top g-brd-top-2 mt-2 g-bg-white g-mt-8--lg--scrolling">
                        <!-- aria-labelledby="mega-menu-home" -->
                       <div class="row align-items-stretch no-gutters">
-                        <div class="col-lg-6 mega-border-right">
-                          <ul class="list-unstyled">
+                        <div class="col-lg-4 mega-border-right">
+                          <ul class="list-unstyled padding-inline-0">
                             <li class="dropdown-item active">
-                              <a href="unify-main/home/home-default.html" class="nav-link">Default</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">อุปกรณ์ อิเล็กทรอนิกส์</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-incredible.html" class="nav-link">Incredible</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">อุปกรณืเสริม อิเล็กทรอนิกส์</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-studio.html" class="nav-link">Studio</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">ทีวีและเครื่องใช้ไฟฟ้าในบ้าน</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-allure.html" class="nav-link">Allure</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">สุขภาพและความงาม</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-inspire.html" class="nav-link">Inspire</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">เด็กอ่อน และของเล่น</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-portfolio.html" class="nav-link">Portfolio</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">ซุปเปอร์มาร์เกต และสัตว์เลี้ยง</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-creative.html" class="nav-link">Creative</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">บ้านแลไลฟ์สไตล์</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-projects.html" class="nav-link">Projects</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">แฟชั่นผู้หญิง</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">แผชั่นผู้ชาย</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">เครื่องประดับ</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">กีใาและ การเดินทาง</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ยานยนต์และอุปกรณ์</a>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mega-border-right">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">เครื่องสำอาง</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ผลิตภัณฑ์เพื่อความงาม</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">อุปกรณ์เพื่อความงาม</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ผลิตภัณฑ์อาบน้ำและดูแลผิว</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">น้ำหอม</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ของใช้ส่วนตัว</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">อาหารเสริม</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">อุปกรณ์เพื่อสุขภาพ</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ผลิตภัณฑ์สำหรับผู้ชาย</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ผลิตภัณฑ์ดูแลผิวหน้า</a>
                             </li>
                           </ul>
                         </div>
-                        <div class="col-lg-6 mega-border-right g-brd-left--lg g-brd-gray-light-v5">
+                        <div class="col-lg-4 mega-border-right">
                           <ul class="list-unstyled">
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-discover.html" class="nav-link">Discover</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">ทรีทเม้นต์สำหรับผม</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-brave.html" class="nav-link">Brave</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">แชมพู</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-business.html" class="nav-link">Business</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">ครีมนวดผม</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-corporate.html" class="nav-link">Corporate</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">ผลิตภัณฑ์จัดแต่งทรงผม</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-web-agency.html" class="nav-link">Web Agency</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">แปรงผลและหวี</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-aspire.html" class="nav-link">Aspire</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">อุปรณ์ดูแลผมอื่นๆ</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-showcase.html" class="nav-link">Showcase</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">อาหารเสริม</a>
                             </li>
                             <li class="dropdown-item ">
-                              <a href="unify-main/home/home-news.html" class="nav-link">News</a>
+                              <a href="{{url('/community')}}" class="nav-link text-small">วิกและกิฟท์ต่อผท</a>
+                            </li>
+                            <li class="dropdown-item ">
+                              <a href="{{url('/community')}}" class="nav-link text-small">ชุดกิฟต์เซ็ต</a>
                             </li>
                           </ul>
                         </div>
@@ -218,17 +266,17 @@
                     <!-- end mega menu -->
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าทั้งหมด</a>
+                    <a href="{{url('/product-list')}}" class="nav-link g-py-7 text-white px-3">ร้านค้าทั้งหมด</a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link g-py-7 text-white px-3">ร้านค้าแนะนำ</a>
+                    <a href="{{url('/product-list')}}" class="nav-link g-py-7 text-white px-3">ร้านค้าแนะนำ</a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link g-py-7 text-white px-3">ค้นหาร้านค้า</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link g-py-7 text-white px-3">ชุมชน</a>
+                    <a href="{{url('/community')}}" class="nav-link g-py-7 text-white px-3">ชุมชน</a>
                   </li>
                 </ul>
 
@@ -264,25 +312,58 @@
 
       <section>
           <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content rounded-0">
               
                 <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">เข้าสู่ระบบ</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-header border-0 col-lg-9 col-md-10 col-12 mx-auto">
+                  <div class="text-center w-100">
+                    <h4 class="modal-title text-gold">เข้าสู่ระบบ</h4>
+                    <hr class="border-secondary mt-3 mb-0">
+                  </div>
                 </div>
                 
                 <!-- Modal body -->
-                <div class="modal-body">
-                  Modal body..
+                <div class="modal-body col-lg-9 col-md-10 col-12 mx-auto">
+                  <form>
+                    <div class="form-group">
+                      <label>ชื่อ-นามสกุล</label>
+                      <input type="text" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group">
+                      <label>ชื่อเล่น</label>
+                      <input type="text" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group">
+                      <label>ชื่อผู้ใช้งาน</label>
+                      <input type="text" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group">
+                      <label>อีเมล</label>
+                      <input type="email" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group">
+                      <label>ไลน์ไอดี</label>
+                      <input type="text" class="form-control rounded-0">
+                    </div>
+                    <div class="form-group">
+                      <label>รหัสผ่าน</label>
+                      <input type="password" class="form-control rounded-0">
+                    </div>
+                  </form>
                 </div>
                 
                 <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer d-block border-0 col-lg-9 col-md-10 col-12 mx-auto">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <button type="submit" class="btn btn-primary bg-dark-green w-100 rounded-0 border-0">ลงทะเบียน</button>
+                    </div>
+                    <div class="col-lg-6">
+                      <button type="button" class="btn btn-secondary w-100 rounded-0 bg-facebook border-0" data-dismiss="modal">ลงทะเบียน Facebook</button>
+                    </div>
+                  </div>
                 </div>
-                
               </div>
             </div>
           </div>

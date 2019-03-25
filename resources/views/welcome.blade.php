@@ -26,19 +26,19 @@
                   </a>
                   <div class="card-body px-2 py-2">
                     <div class="store-title">
-                      <a href="#">Shoponline{{$i}}</a>
+                      <a href="{{url('/profile')}}">Shoponline{{$i}}</a>
                     </div>
                     <div class="store-category">
-                      <a href="#">ฟิล์มกระจก,</a>
-                      <a href="#">กล้องติดรถยนต์,</a>
-                      <a href="#">ฟกล้องติดรถยนต์ Anytek,</a>
-                      <a href="#">บลูทธ,</a>
-                      <a href="#">ลำโพง,</a>
-                      <a href="#">บลูทูธ,</a>
-                      <a href="#">เคสมือถือ,</a>
-                      <a href="#">ที่ชาร์จในรถ,</a>
-                      <a href="#">เสื้อกีฬา,</a>
-                      <a href="#">ลิขสิทธ และอุปกรณ์มือถือ remax ราคาถูกที่สุด,</a>
+                      <a href="{{url('/product-list')}}">ฟิล์มกระจก,</a>
+                      <a href="{{url('/product-list')}}">กล้องติดรถยนต์,</a>
+                      <a href="{{url('/product-list')}}">ฟกล้องติดรถยนต์ Anytek,</a>
+                      <a href="{{url('/product-list')}}">บลูทธ,</a>
+                      <a href="{{url('/product-list')}}">ลำโพง,</a>
+                      <a href="{{url('/product-list')}}">บลูทูธ,</a>
+                      <a href="{{url('/product-list')}}">เคสมือถือ,</a>
+                      <a href="{{url('/product-list')}}">ที่ชาร์จในรถ,</a>
+                      <a href="{{url('/product-list')}}">เสื้อกีฬา,</a>
+                      <a href="{{url('/product-list')}}">ลิขสิทธ และอุปกรณ์มือถือ remax ราคาถูกที่สุด,</a>
                     </div>
                     
                     <ul class="d-flex w-100 store-view">

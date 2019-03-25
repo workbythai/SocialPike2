@@ -741,7 +741,9 @@ li.list-tab-cat {
   transition: 0.3s;
 }
 
-
+.dropdown-item {
+    padding: 0.21429rem 0.07143rem;
+}
 .sidebarcolor .closebtn {
   position: absolute;
   top: 0;
@@ -758,7 +760,13 @@ li.list-tab-cat {
   padding: 10px 15px;
   border: none;
 }
-
+.hs-mega-menu {
+    max-width: 100%!important;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background: rgb(255, 255, 255);
+    color: #1dbf38!important;
+}
 .openbtn:hover {
   background-color: #444;
 }
@@ -788,6 +796,9 @@ li.list-tab-cat {
     width: 50px;
     height: 50px;
 }
+.padding-inline-0 {
+        padding-inline-start: 0px;
+}
 .mega-border-right {
     border-right: 1px solid #9E9E9E;
 }
@@ -799,6 +810,9 @@ li.list-tab-cat {
 }
 .bg-dark-green {
     background-color: #009688;
+}
+.bg-facebook {
+    background-color: #4267b2;
 }
 .bg-green1 {
     background-color: #4CAF50;
